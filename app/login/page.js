@@ -39,7 +39,7 @@ const SuperAdminLogin = () => {
       {/* <ThemeSelector/> */}
       <div className="lg:flex flex-col justify-center w-full lg:w-1/2 p-16 text-white bg-primary-gradient animate-gradient">
         <div className="flex lg:flex-row flex-col items-center mb-10 animate-fade-in">
-          <img src="logo.png" alt="BadiDukan Logo" className="h-16 mr-4 rounded-full p-1 shadow-lg bg-amber-50" />
+          <img src="logo.png" alt="ProGateTechnology Logo" className="h-16 mr-4 rounded-full p-1 shadow-lg bg-amber-50" />
           {/* <h1 className="text-5xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent"> */}
           <h1 className="text-5xl font-extrabold tracking-wide bg-clip-text  text-primary-text">
             Welcome to Badi Eats!

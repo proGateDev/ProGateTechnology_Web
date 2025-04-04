@@ -9,9 +9,12 @@
   /* Font Families */
   --font-display: "Poppins", sans-serif; /* Modern and friendly */
   --font-body: "Poppins", sans-serif;
-
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(90deg, #8d3018, #db630a); /* Vibrant Orange Gradient */
+  --gradient-secondary: linear-gradient(90deg, #32CD32, #00C853); /* Fresh Green Gradient */
+  --gradient-accent: linear-gradient(90deg, #f0303e, #f7e5e7); /* Golden Yellow Gradient */
   /* Brand Colors (Food Delivery Theme) */
-  --color-background: #fbd9c8; /* Warm and inviting */
+  --color-background: #8d3018; /* Warm and inviting */
   --color-background-section: #FAF9F6; /* Pure white */
 
   --color-primary: #FF4500; /* Vibrant Orange (Call-to-action) */
@@ -19,7 +22,7 @@
   --color-background-muted: #d1d5dc; /* Muted grey text for hints */
 
   --color-secondary: #32CD32; /* Fresh Green (Healthy Vibes) */
-  --color-accent: #f0303e; /* Golden Yellow (Highlights) */
+  --color-accent: #e96c06; /* Golden Yellow (Highlights) */
   --color-accent-muted: #f7e5e7; /* Golden Yellow (Highlights) */
   --color-dark: #2D2D2D; /* Deep Grey (Text and Dark Mode) */
 
