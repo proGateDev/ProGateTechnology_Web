@@ -43,7 +43,7 @@ Robust and secure enterprise-grade software to digitize and optimize your operat
 ## 📞 Let's Connect
 
 📧 Email: [contact@progatesolutions.com](mailto:contact@progatesolutions.com)  
-🌐 Website: [www.progatesolutions.com](https://www.progatesolutions.com)  
+🌐 Website: [www.progatesolutions.com](https://www.progatetechnology.com/)  
 📍 Location: India | Serving clients worldwide
 
 ---
