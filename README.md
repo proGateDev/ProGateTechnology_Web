@@ -44,7 +44,7 @@ Robust and secure enterprise-grade software to digitize and optimize your operat
 
 📧 Email: [contact@progatetechnology.com](mailto:contact@progatetechnology.com)  
 🌐 Website: [www.progatetechnology.com](https://www.progatetechnology.com/)  
-📍 Location: India | Serving clients worldwide
+📍 Location: Lucknow, India | Serving clients worldwide
 
 ---
 
