@@ -22,7 +22,7 @@
   --color-background-muted: #d1d5dc; /* Muted grey text for hints */
 
   --color-secondary: #32CD32; /* Fresh Green (Healthy Vibes) */
-  --color-accent: #e96c06; /* Golden Yellow (Highlights) */
+  --color-accent: #933418; /* Golden Yellow (Highlights) */
   --color-accent-muted: #f7e5e7; /* Golden Yellow (Highlights) */
   --color-dark: #2D2D2D; /* Deep Grey (Text and Dark Mode) */
 
@@ -85,4 +85,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@layer utilities {
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-down {
+    animation: slide-down .51s ease-out;
+  }
 }

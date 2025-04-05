@@ -1,17 +1,37 @@
 import React from "react";
 
-export  function Button({ children, className, variant = "default", ...props }) {
-  const baseStyles = "px-4 py-2 rounded-lg font-medium transition duration-200";
-  const variants = {
-    default: "bg-blue-600 text-white hover:bg-blue-700",
-    outline: "border border-gray-300 text-gray-700 hover:bg-gray-100",
-    danger: "bg-red-600 text-white hover:bg-red-700",
-    success: "bg-green-600 text-white hover:bg-green-700",
+//=========================================================================================
+export function Button({ children, fullwidth = false, variant = "default", inverse = false, ...props }) {
+//=========================================================================================
+  const baseStyles = `
+    flex items-center justify-center gap-2
+    px-5 py-4 rounded-lg text-sm font-semibold
+    transition-all duration-200 ease-in-out
+    shadow-sm active:scale-95 select-none
+    ${fullwidth ? "w-full" : "w-fit"}
+  `;
+
+  const variantStyles = {
+    default: inverse
+      ? "bg-white text-accent border border-accent hover:bg-accent hover:text-white"
+      : "bg-accent text-white hover:bg-accent-muted hover:border hover:border-accent hover:text-accent",
+
+    outline: inverse
+      ? "bg-accent text-white border border-white hover:bg-white hover:text-accent"
+      : "border border-accent text-accent bg-white hover:bg-accent hover:text-white hover:border hover:border-accent",
+
+    ghost: inverse
+      ? "text-white hover:bg-white/10"
+      : "text-accent hover:bg-accent/10",
   };
 
   return (
-    <button className={`${baseStyles} ${variants[variant]} ${className}`} {...props}>
+    <button
+      {...props}
+      className={`${baseStyles} ${variantStyles[variant]}`}
+    >
       {children}
     </button>
   );
-} 
+}
+//=========================================================================================

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-
+import HiringBadge from "./ui/Badges/hiringBadge";
+//===================================================================
 const menuItems = [
   {
     label: "Home",
@@ -55,23 +56,24 @@ const menuItems = [
     href: "#",
   },
 ];
-
+//===================================================================
 const NavbarMega = () => {
+  //===================================================================
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
-
+  //===================================================================
   return (
     <nav className="rounded bg-gradient-to-r from-[#8d3018] via-[#e96c06] to-[#db630a] ">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
           <img src="/logo.png" alt="Logo" className="" />
-          <span className="text-white text-2xl font-bold hidden md:block">
+          {/* <span className="text-white text-2xl font-bold hidden md:block">
             ProGate Technology
-          </span>
+          </span> */}
         </a>
 
         {/* Mobile Menu Toggle */}
@@ -82,10 +84,14 @@ const NavbarMega = () => {
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
-        {/* Menu */}
+        {/* ============ Menu ==================== */}
         <ul
           className={`md:flex md:space-x-8 items-center text-white font-medium ${menuOpen ? "block" : "hidden"}`}
         >
+          {/* ============ Hiring now ==================== */}
+          <HiringBadge />
+
+          {/* ======================================= */}
           {menuItems.map((item, index) => (
             <li key={index} className="relative">
               {item.subMenu ? (
@@ -140,3 +146,4 @@ const NavbarMega = () => {
 };
 
 export default NavbarMega;
+//===================================================================

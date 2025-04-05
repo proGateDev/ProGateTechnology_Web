@@ -31,9 +31,9 @@ const SingleImageUploader = ({ setImageFile }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 space-y-4 mt-8">
       <label className="block text-center text-gray-700 font-medium mb-2">
-        <span className="text-lg">Upload Category Icon</span>
+        <span className="text-lg">Upload Your Resume</span>
         <p className="text-sm text-gray-500 mt-1">
-          Please upload a clear image of the product. (JPG, PNG, etc.)
+          Allowed Files Formats (.word, .pdf, .txt)
         </p>
       </label>
 
